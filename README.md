@@ -69,4 +69,4 @@ Proprietary - Contact for partnership & hotel installation.
 
 This is now ready to commit.
 
-Do you want me to also make you a **short WhatsApp business description** using same contact so hotels can find you?
+
