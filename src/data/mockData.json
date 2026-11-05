@@ -1,0 +1,155 @@
+{
+  "hotel": {
+    "id": "hotel-kigali-heights-demo",
+    "name": "Kigali Heights Hotel",
+    "location": "Kigali, Rwanda",
+    "manager": "Aline Uwimana",
+    "currency": "RWF",
+    "timezone": "Africa/Kigali"
+  },
+  "overview": {
+    "occupancy": 50,
+    "totalRooms": 8,
+    "activeCards": 4,
+    "accessEventsToday": 248,
+    "deniedEventsToday": 2,
+    "monthlyRevenue": 4280000,
+    "revenueChangePercent": 12,
+    "aiSavingsEstimateUsd": 100,
+    "accessTrend": [
+      { "day": "Mon", "value": 148 },
+      { "day": "Tue", "value": 182 },
+      { "day": "Wed", "value": 166 },
+      { "day": "Thu", "value": 215 },
+      { "day": "Fri", "value": 193 },
+      { "day": "Sat", "value": 248 },
+      { "day": "Sun", "value": 202 }
+    ]
+  },
+  "rooms": [
+    { "number": "101", "type": "Deluxe", "floor": 1, "status": "Occupied", "guest": "Chantal Mukamana", "checkOut": "2026-11-04", "powerWasteUsdMonthly": 12 },
+    { "number": "102", "type": "Standard", "floor": 1, "status": "Available", "guest": "", "checkOut": "", "powerWasteUsdMonthly": 4 },
+    { "number": "103", "type": "Twin", "floor": 1, "status": "Occupied", "guest": "Eric Niyonzima", "checkOut": "2026-11-03", "powerWasteUsdMonthly": 7 },
+    { "number": "201", "type": "Suite", "floor": 2, "status": "Occupied", "guest": "Grace Uwera", "checkOut": "2026-11-06", "powerWasteUsdMonthly": 18 },
+    { "number": "202", "type": "Deluxe", "floor": 2, "status": "Cleaning", "guest": "", "checkOut": "", "powerWasteUsdMonthly": 9 },
+    { "number": "203", "type": "Standard", "floor": 2, "status": "Available", "guest": "", "checkOut": "", "powerWasteUsdMonthly": 3 },
+    { "number": "301", "type": "Suite", "floor": 3, "status": "Occupied", "guest": "Daniel Habimana", "checkOut": "2026-11-05", "powerWasteUsdMonthly": 12 },
+    { "number": "302", "type": "Deluxe", "floor": 3, "status": "Available", "guest": "", "checkOut": "", "powerWasteUsdMonthly": 5 }
+  ],
+  "cards": [
+    { "uid": "04:A8:2F:91", "guest": "Chantal Mukamana", "room": "101", "status": "Active", "expires": "2026-11-04" },
+    { "uid": "04:B1:3C:72", "guest": "Eric Niyonzima", "room": "103", "status": "Active", "expires": "2026-11-03" },
+    { "uid": "04:C5:8A:14", "guest": "Grace Uwera", "room": "201", "status": "Active", "expires": "2026-11-06" },
+    { "uid": "04:D9:1E:43", "guest": "Daniel Habimana", "room": "301", "status": "Active", "expires": "2026-11-05" },
+    { "uid": "04:E2:7B:09", "guest": "Unassigned", "room": "—", "status": "Blocked", "expires": "—" },
+    { "uid": "04:F6:4D:88", "guest": "Lost card", "room": "102", "status": "Blocked", "expires": "—" }
+  ],
+  "logs": [
+    { "id": "evt-001", "time": "2026-11-02T10:42:00+02:00", "room": "101", "guest": "Chantal Mukamana", "reader": "Reader 101", "result": "Allowed", "reason": "Valid guest card", "cardUid": "04:A8:2F:91" },
+    { "id": "evt-002", "time": "2026-11-02T10:36:00+02:00", "room": "201", "guest": "Grace Uwera", "reader": "Reader 201", "result": "Allowed", "reason": "Valid guest card", "cardUid": "04:CL:ON:ED" },
+    { "id": "evt-003", "time": "2026-11-02T10:21:00+02:00", "room": "102", "guest": "Unknown card", "reader": "Reader 102", "result": "Denied", "reason": "Card blocked", "cardUid": "04:E2:7B:09" },
+    { "id": "evt-004", "time": "2026-11-02T09:58:00+02:00", "room": "301", "guest": "Daniel Habimana", "reader": "Reader 301", "result": "Allowed", "reason": "Valid guest card", "cardUid": "04:D9:1E:43" },
+    { "id": "evt-005", "time": "2026-11-02T09:41:00+02:00", "room": "103", "guest": "Eric Niyonzima", "reader": "Reader 103", "result": "Allowed", "reason": "Valid guest card", "cardUid": "04:B1:3C:72" },
+    { "id": "evt-006", "time": "2026-11-02T09:12:00+02:00", "room": "202", "guest": "Unknown card", "reader": "Reader 202", "result": "Denied", "reason": "Room has no active stay", "cardUid": "04:AA:BB:01" },
+    { "id": "evt-007", "time": "2026-11-02T08:54:00+02:00", "room": "101", "guest": "Chantal Mukamana", "reader": "Reader 101", "result": "Allowed", "reason": "Valid guest card", "cardUid": "04:A8:2F:91" },
+    { "id": "evt-008", "time": "2026-11-02T08:35:00+02:00", "room": "201", "guest": "Grace Uwera", "reader": "Reader 201", "result": "Allowed", "reason": "Valid guest card", "cardUid": "04:C5:8A:14" },
+    { "id": "evt-009", "time": "2026-11-02T02:25:00+02:00", "room": "302", "guest": "Unknown card", "reader": "Reader 302", "result": "Allowed", "reason": "After-hours tap", "cardUid": "04:N1:GHT:52" },
+    { "id": "evt-010", "time": "2026-11-01T03:12:00+02:00", "room": "302", "guest": "Unknown card", "reader": "Reader 302", "result": "Allowed", "reason": "After-hours tap", "cardUid": "04:N1:GHT:52" },
+    { "id": "evt-011", "time": "2026-10-31T04:05:00+02:00", "room": "302", "guest": "Unknown card", "reader": "Reader 302", "result": "Allowed", "reason": "After-hours tap", "cardUid": "04:N1:GHT:52" },
+    { "id": "evt-012", "time": "2026-11-02T10:08:00+02:00", "room": "301", "guest": "Daniel Habimana", "reader": "Reader 301", "result": "Allowed", "reason": "Repeated tap", "cardUid": "04:TAP:52:01" },
+    { "id": "evt-013", "time": "2026-11-02T10:11:00+02:00", "room": "301", "guest": "Daniel Habimana", "reader": "Reader 301", "result": "Allowed", "reason": "Repeated tap", "cardUid": "04:TAP:52:01" },
+    { "id": "evt-014", "time": "2026-11-02T10:14:00+02:00", "room": "301", "guest": "Daniel Habimana", "reader": "Reader 301", "result": "Allowed", "reason": "Repeated tap", "cardUid": "04:TAP:52:01" },
+    { "id": "evt-015", "time": "2026-11-02T10:17:00+02:00", "room": "301", "guest": "Daniel Habimana", "reader": "Reader 301", "result": "Allowed", "reason": "Repeated tap", "cardUid": "04:TAP:52:01" },
+    { "id": "evt-016", "time": "2026-11-02T10:20:00+02:00", "room": "301", "guest": "Daniel Habimana", "reader": "Reader 301", "result": "Allowed", "reason": "Repeated tap", "cardUid": "04:TAP:52:01" },
+    { "id": "evt-017", "time": "2026-11-02T10:23:00+02:00", "room": "301", "guest": "Daniel Habimana", "reader": "Reader 301", "result": "Allowed", "reason": "Repeated tap", "cardUid": "04:TAP:52:01" },
+    { "id": "evt-018", "time": "2026-11-02T10:27:00+02:00", "room": "301", "guest": "Daniel Habimana", "reader": "Reader 301", "result": "Allowed", "reason": "Repeated tap", "cardUid": "04:TAP:52:01" },
+    { "id": "evt-019", "time": "2026-11-02T09:30:00+02:00", "room": "101", "guest": "Master access", "reader": "Reader 101", "result": "Allowed", "reason": "Reception master card", "cardUid": "04:MASTER:01", "cardType": "receptionist_master" },
+    { "id": "evt-020", "time": "2026-11-02T09:34:00+02:00", "room": "102", "guest": "Master access", "reader": "Reader 102", "result": "Allowed", "reason": "Reception master card", "cardUid": "04:MASTER:01", "cardType": "receptionist_master" }
+  ],
+  "locks": [
+    { "lockId": "LOCK-101", "roomId": "101", "battery": 78, "samples": [{ "date": "2026-10-30", "battery": 98 }, { "date": "2026-11-01", "battery": 86 }, { "date": "2026-11-02", "battery": 78 }] },
+    { "lockId": "LOCK-201", "roomId": "201", "battery": 91, "samples": [{ "date": "2026-10-30", "battery": 98 }, { "date": "2026-11-01", "battery": 94 }, { "date": "2026-11-02", "battery": 91 }] },
+    { "lockId": "LOCK-302", "roomId": "302", "battery": 32, "samples": [{ "date": "2026-10-30", "battery": 67 }, { "date": "2026-11-01", "battery": 45 }, { "date": "2026-11-02", "battery": 32 }] }
+  ],
+  "electricityEvents": [
+    { "roomId": "101", "timestamp": "2026-11-02T08:00:00+02:00", "powerState": "ON", "cardState": "OUT", "watts": 1800, "cardUid": "04:A8:2F:91" },
+    { "roomId": "101", "timestamp": "2026-11-02T17:00:00+02:00", "powerState": "OFF", "cardState": "IN", "watts": 0, "cardUid": "04:A8:2F:91" },
+    { "roomId": "201", "timestamp": "2026-11-02T08:00:00+02:00", "powerState": "ON", "cardState": "OUT", "watts": 3900, "cardUid": "04:C5:8A:14" },
+    { "roomId": "201", "timestamp": "2026-11-02T17:00:00+02:00", "powerState": "OFF", "cardState": "IN", "watts": 0, "cardUid": "04:C5:8A:14" },
+    { "roomId": "301", "timestamp": "2026-11-02T08:15:00+02:00", "powerState": "ON", "cardState": "OUT", "watts": 2200, "cardUid": "04:D9:1E:43" },
+    { "roomId": "301", "timestamp": "2026-11-02T16:30:00+02:00", "powerState": "OFF", "cardState": "IN", "watts": 0, "cardUid": "04:D9:1E:43" }
+  ],
+  "staffLogs": [
+    { "staffId": "Mariam K.", "event": "check_in_started", "timestamp": "2026-11-02T08:00:00+02:00" },
+    { "staffId": "Mariam K.", "event": "check_in_completed", "timestamp": "2026-11-02T08:04:00+02:00" },
+    { "staffId": "Mariam K.", "event": "failed_tap", "timestamp": "2026-11-02T08:20:00+02:00" },
+    { "staffId": "Mariam K.", "event": "tap_resolved", "timestamp": "2026-11-02T08:24:00+02:00" },
+    { "staffId": "Eric N.", "event": "check_in_started", "timestamp": "2026-11-02T08:10:00+02:00" },
+    { "staffId": "Eric N.", "event": "check_in_completed", "timestamp": "2026-11-02T08:22:00+02:00" },
+    { "staffId": "Eric N.", "event": "door_opened", "timestamp": "2026-11-02T02:40:00+02:00" },
+    { "staffId": "Eric N.", "event": "failed_tap", "timestamp": "2026-11-02T08:30:00+02:00" },
+    { "staffId": "Eric N.", "event": "tap_resolved", "timestamp": "2026-11-02T08:42:00+02:00" }
+  ],
+  "electricity": {
+    "todayKwh": 184,
+    "estimatedCostRwf": 27600,
+    "backupMinutes": 94,
+    "usageChangePercent": -8,
+    "circuits": [
+      { "id": "main", "name": "Main building", "area": "All floors", "watts": 1840, "active": true, "status": "Normal" },
+      { "id": "lobby", "name": "Lobby & reception", "area": "Ground floor", "watts": 620, "active": true, "status": "Normal" },
+      { "id": "floor-1", "name": "Floor 1", "area": "Rooms 101–108", "watts": 780, "active": true, "status": "Normal" },
+      { "id": "floor-2", "name": "Floor 2", "area": "Rooms 201–208", "watts": 540, "active": true, "status": "Normal" },
+      { "id": "kitchen", "name": "Kitchen", "area": "Service area", "watts": 910, "active": false, "status": "Standby" }
+    ],
+    "weeklyUsage": [
+      { "day": "Mon", "kwh": 212 },
+      { "day": "Tue", "kwh": 198 },
+      { "day": "Wed", "kwh": 221 },
+      { "day": "Thu", "kwh": 187 },
+      { "day": "Fri", "kwh": 205 },
+      { "day": "Sat", "kwh": 194 },
+      { "day": "Sun", "kwh": 184 }
+    ]
+  },
+  "billing": {
+    "plan": "Growth",
+    "status": "Active",
+    "monthlyPriceRwf": 85000,
+    "nextBillingDate": "2026-12-01",
+    "roomsIncluded": 40,
+    "roomsUsed": 32,
+    "paymentMethod": "MTN MoMo",
+    "includedFeatures": [
+      "Smart card access management",
+      "Room and reader monitoring",
+      "Access activity reporting",
+      "Local support for your property"
+    ],
+    "invoices": [
+      { "number": "ZEN-2026-010", "date": "2026-11-01", "description": "Growth plan · November 2026", "amountRwf": 85000, "status": "Paid" },
+      { "number": "ZEN-2026-009", "date": "2026-10-01", "description": "Growth plan · October 2026", "amountRwf": 85000, "status": "Paid" },
+      { "number": "ZEN-2026-008", "date": "2026-09-01", "description": "Growth plan · September 2026", "amountRwf": 85000, "status": "Paid" }
+    ]
+  },
+  "navigation": [
+    { "href": "/dashboard", "label": "Overview", "icon": "dashboard" },
+    { "href": "/rooms", "label": "Rooms", "icon": "rooms" },
+    { "href": "/cards", "label": "Access cards", "icon": "cards" },
+    { "href": "/logs", "label": "Access logs", "icon": "logs" },
+    { "href": "/electricity", "label": "Electricity", "icon": "electricity" },
+    { "href": "/billing", "label": "Billing", "icon": "billing" },
+    { "href": "/ai-insights", "label": "AI Insights", "icon": "ai" }
+  ],
+  "defaults": {
+    "newRoomType": "Standard",
+    "newRoomStatus": "Available"
+  },
+  "demoScenario": {
+    "cardUid": "04:CL:ON:ED",
+    "roomId": "3",
+    "otherRoomId": "201",
+    "kinyarwandaMessage": "Ikarita #52 ikoreshwa ahantu habiri",
+    "englishMessage": "Card #52 used in two rooms within 10 minutes."
+  }
+}
